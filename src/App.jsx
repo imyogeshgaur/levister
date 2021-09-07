@@ -7,10 +7,9 @@ import Navbar from "./assets/NavBar";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Alert from "./assets/Alert";
 
-
-
 const App = () => {
   const [mode, setMode] = useState("light");
+  const screenSize = window.innerWidth;
 
   const ToggleMode = ()=>{
     if(mode==="light"){
@@ -27,7 +26,7 @@ const App = () => {
   }
   return (
     <>
-      <Navbar mode={mode} ToggleMode={ToggleMode}/>
+      <Navbar mode={mode} ToggleMode={ToggleMode} screenSize={screenSize}/>
       <Switch>
         <Route exact path="/">
             <Home mode={mode} />

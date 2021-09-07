@@ -12,7 +12,7 @@ const Card = (props) => {
             <p className={props.mode==="light" ? "card-text":"card-text  text-white"}>
               {props.description} 
             </p>
-            <NavLink to="" className="btn btn-primary">
+            <NavLink to="" className={`btn btn-${props.mode==="light" ? "primary" :"secondary"}`}>
               Check Now
             </NavLink>
           </div>

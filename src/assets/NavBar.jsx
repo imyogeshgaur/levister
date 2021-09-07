@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 const NavBar = (props) => {
   return (
     <>
-      <nav className={props.mode === 'light' ? `navbar navbar-expand-lg navbar-light bg-primary1` : `navbar navbar-expand-lg navbar-dark bg-dark`}>
+      <nav className={props.mode === 'light'?`navbar navbar-expand-lg navbar-light bg-primary1` : `navbar navbar-expand-lg navbar-dark bg-dark static-top`}>
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">Levister Technologies</NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

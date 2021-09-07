@@ -11,7 +11,7 @@ const TCard = (props) => {
                         <p className={props.mode === "light" ? "card-text" : "card-text  text-white"}>
                             {props.position}
                         </p>
-                        <a href={props.linkedIn} className="btn btn-primary" target="_yogesh">
+                        <a href={props.linkedIn} className={`btn btn-${props.mode==="light" ? "primary" :"secondary"}`} target="_yogesh">
                             Check Profile
                         </a>
                     </div>
