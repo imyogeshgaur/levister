@@ -103,7 +103,7 @@ const Contact = (props) => {
             </div>
 
             <div className="col-12">
-              <button className="btn btn-outline-primary" type="submit" onClick={formSubmit}>
+              <button className={`btn btn-outline-${props.mode==="light" ? "primary":"secondary"}`} type="submit" onClick={formSubmit}>
                 Submit form
               </button>
             </div>

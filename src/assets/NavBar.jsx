@@ -1,6 +1,5 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 const NavBar = (props) => {
-
   return (
     <>
       <nav className={props.mode === 'light' ? `navbar navbar-expand-lg navbar-light bg-primary1` : `navbar navbar-expand-lg navbar-dark bg-dark`}>
@@ -12,7 +11,7 @@ const NavBar = (props) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/home" activeClassName="active">Home</NavLink>
+                <NavLink className="nav-link" aria-current="page" to="/home">Home</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/about">About</NavLink>
