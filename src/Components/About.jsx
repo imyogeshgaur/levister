@@ -1,5 +1,4 @@
 import React from "react";
-import web from "../images/hero-img.png";
 import Commom from "../assets/Commom";
 import Tdata from "../assets/Tdata";
 import TCard from "../assets/TCard"
@@ -10,7 +9,7 @@ const About = (props) => {
     <div style={{ height: '55px' }}></div>
       <Commom
         name="Welcome to About page"
-        imgsrc={web}
+        imgsrc="https://ik.imagekit.io/levister/images/hero-img_8j2uIij5A_F.png?updatedAt=1631085695882"
         visit="/contact"
         btname="Contact Now"
         mode={props.mode}

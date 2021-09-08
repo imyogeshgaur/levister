@@ -1,5 +1,4 @@
 import React from "react";
-import web from "../images/img2.png";
 import Commom from "../assets/Commom";
 const Home = (props) => {
   return (
@@ -7,7 +6,7 @@ const Home = (props) => {
       <div style={{ height: '55px' }}></div>
       <Commom
         name="Grow your business with"
-        imgsrc={web}
+        imgsrc="https://ik.imagekit.io/levister/images/img2_bxbHfDekz.png?updatedAt=1631085696724"
         visit="/service"
         btname="Our Services"
         mode={props.mode}
