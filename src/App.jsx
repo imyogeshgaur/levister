@@ -6,7 +6,6 @@ import Contact from "./Components/Contact";
 import Navbar from "./assets/NavBar";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Alert from "./assets/Alert";
-import Carousel from "./Components/Carousel";
 
 const App = () => {
   const [mode, setMode] = useState("light");
@@ -49,7 +48,6 @@ const App = () => {
           <Alert alert={alert}/>
           <Contact mode={mode} showAlert={showAlert}/>
         </Route>
-        <Route exact path="/carousel" component={Carousel}/>
         <Redirect to="/" />
       </Switch>
     </>

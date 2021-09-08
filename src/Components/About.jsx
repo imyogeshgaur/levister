@@ -7,6 +7,7 @@ import TCard from "../assets/TCard"
 const About = (props) => {
   return (
     <>
+    <div style={{ height: '55px' }}></div>
       <Commom
         name="Welcome to About page"
         imgsrc={web}
@@ -15,7 +16,7 @@ const About = (props) => {
         mode={props.mode}
       />
       <div className="container">
-        <p style={{ textAlign: "center" }} className={props.mode === "light" ? "text-dark" : "  text-white"}>We are one of the leading company in prividing the services in various sectors of the market our team work on various project domains like IoT , Web and App Devlopment, Digital marketing and Business Automation.</p>
+        <p style={{ textAlign: "center" }} className={props.mode === "light" ? "text-dark mt-2" : "  text-white mt-2"}>We are one of the leading company in prividing the services in various sectors of the market our team work on various project domains like IoT , Web and App Devlopment, Digital marketing and Business Automation.</p>
       </div>
       <div className="my-5">
         <h1 className={props.mode === "light" ? "text-center text-dark" : "text-center text-white"}> Our Team </h1>
