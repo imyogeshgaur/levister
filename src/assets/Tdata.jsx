@@ -1,4 +1,3 @@
-
 const Tdata = [
     {
         imgSrc: "https://ik.imagekit.io/levister/images/aman_YXRvctIOe.jpg?updatedAt=1631085695465",
