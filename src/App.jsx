@@ -6,9 +6,11 @@ import Contact from "./Components/Contact";
 import Navbar from "./assets/NavBar";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Alert from "./assets/Alert";
+import Carousel from "./Components/Carousel";
 
 const App = () => {
   const [mode, setMode] = useState("light");
+  const [alert, setAlert] = useState(null);
   const screenSize = window.innerWidth;
 
   const ToggleMode = ()=>{
@@ -22,7 +24,13 @@ const App = () => {
   }
 
   const showAlert = (message,type)=>{
-      <Alert message={message} type={type} />
+    setAlert({
+      message,
+      type
+    })
+    setTimeout(() => {
+      setAlert(null);
+    }, 1500);
   }
   return (
     <>
@@ -38,8 +46,10 @@ const App = () => {
             <Service mode={mode}/>
         </Route>
         <Route exact path="/contact">
+          <Alert alert={alert}/>
           <Contact mode={mode} showAlert={showAlert}/>
         </Route>
+        <Route exact path="/carousel" component={Carousel}/>
         <Redirect to="/" />
       </Switch>
     </>

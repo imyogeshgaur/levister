@@ -4,6 +4,7 @@ import Commom from "../assets/Commom";
 const Home = (props) => {
   return (
     <>
+      <div style={{ height: '55px' }}></div>
       <Commom
         name="Grow your business with"
         imgsrc={web}
